@@ -1,21 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
-body {
-  background-color: #fcf2ffd3;
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Protest+Revolution&display=swap");
+
+
+:root {
+  --preto: #0b0b0b;
+  --preto-caixa: #181818;
+  --preto-input: #111111;
+
+  --branco: #ffffff;
+  --cinza: #444444;
+  --cinza-claro: #666666;
+
+  --roxo: #6d28d9;
+  --roxo-claro: #8b5cf6;
+  --roxo-escuro: #5b21b6;
 }
 
-h1 {
-  color: #4b076b;
-  margin: 50px;
-  text-align: center;
-  font-size: 60px;
+body {
+  background-color: #0b0b0b;
+  color: white;
+  font-family: "Comic Relief", sans-serif;
+  padding: 20px;
+}
+
+img {
+  width: 220px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #8b5cf6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Protest Revolution", sans-serif;
+  color: #ffffff;
+  background-color: #5b21b6;
+  letter-spacing: 2px;
 }
 
 button {
-  color: #8c00ff;
+  color: #ffffff;
   padding: 12px 20px;
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;
+  background-color: #8c00ff;
 }
 
 p {
@@ -23,22 +53,23 @@ p {
   padding: 12px 20px;
   text-align: justify;
   margin: 8px 0;
-  color: #33004b;
+  color: #ffffff;
 }
 
-h2,
-h3 {
-  color: #650094;
-  padding: 12px 20px;
-  font-size: 30px;
+.fundo {
+  background-color: #181818;
+  border: 1px solid #444;
+  padding: 15px;
+  margin: 15px auto;
 }
+
 
 ul li {
   font-size: 20px;
   margin: 8px 0;
   padding: 6px 10px;
   border-radius: 6px;
-  color: #33004b;
+  color: #ffffff;
 }
 
 ol li {
@@ -46,11 +77,5 @@ ol li {
   margin: 8px 0;
   padding: 6px 10px;
   border-radius: 6px;
-  color: #33004b;
-}
-
-* {
-  font-family: "Sedgwick Ave", cursive;
-  font-weight: 200;
-  font-style: normal;
+  color: #ffffff;
 }
