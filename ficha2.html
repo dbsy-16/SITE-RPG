@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordem Paranormal</title>
+     <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="https://i.pinimg.com/736x/ce/5f/20/ce5f20b0315fa3b5ee4597cc8097be65.jpg"
+          alt="ordemparanormal"
+        />
+      </div>
+    </header>
+<div>
+  <a href="pagina tal">
+    <button>Início</button>
+</a>
+</div>
+    <div>
+      <h1>Ficha</h1>
+    </div>
+
+
+    <!-- Preenchimento nome e idade -->
+    <div>
+      <ul class="lista">
+        <li>
+          <label for="nome">JOGADOR(A):</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome aqui"
+          />
+        </li>
+        <li>
+          <label for="idade">IDADE:</label>
+          <input
+            type="text"
+            id="idade"
+            name="idade"
+            placeholder="Digite sua idade aqui"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <!-- Preenchimento geral -->
+    <div>
+      <ul class="lista">
+        <li>
+          <label for="classe">CLASSE:</label>
+          <select id="classe" name="classe">
+            <option value="ocultista">Ocultista</option>
+            <option value="combatente">Combatente</option>
+            <option value="especialista">Especialista</option>
+          </select>
+        </li>
+        <li>
+          <label for="patente">PATENTE:</label>
+          <select id="patente" name="patente">
+            <option value="recruta">Recruta</option>
+            <option value="operador">Operador</option>
+            <option value="agenteespecial">Agente Especial</option>
+            <option value="oficialdeoperações">Oficial de Operações</option>
+            <option value="agentedeelite">Agente de Elite</option>
+          </select>
+        </li>
+        <li>
+          <label for="elemento">ELEMENTO:</label>
+          <select id="elemento" name="elemento">
+            <option value="sangue">Sangue</option>
+            <option value="morte">Morte</option>
+            <option value="conhecimento">Conhecimento</option>
+            <option value="Energia">Energia</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="trilha">TRILHA:</label>
+          <input
+            type="text"
+            id="trilha"
+            name="trilha"
+            placeholder="Descreva a sua trilha"
+          />
+        </li>
+        <li>
+          <label for="origem">ORIGEM:</label>
+          <select id="origem" name="origem">
+            <option value="academico">Acadêmico</option>
+            <option value="agente_de_saude">Agente de Saúde</option>
+            <option value="amnesico">Amnésico</option>
+            <option value="artista">Artista</option>
+            <option value="atleta">Atleta</option>
+            <option value="chef">Chef</option>
+            <option value="criminoso">Criminoso</option>
+            <option value="cultista_arrependido">Cultista Arrependido</option>
+            <option value="desgarrado">Desgarrado</option>
+            <option value="engenheiro">Engenheiro</option>
+            <option value="executivo">Executivo</option>
+            <option value="investigador">Investigador</option>
+            <option value="lutador">Lutador</option>
+            <option value="mercenario">Mercenário</option>
+            <option value="militar">Militar</option>
+            <option value="operario">Operário</option>
+            <option value="policial">Policial</option>
+            <option value="religioso">Religioso</option>
+            <option value="servidor_publico">Servidor Público</option>
+            <option value="teorico_da_conspiracao">
+              Teórico da Conspiração
+            </option>
+            <option value="ti">T.I.</option>
+            <option value="vitima">Vítima</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="pex">PEX</label>
+          <input type="text" id="pex" name="pex" placeholder="xxxxx/xxxxx" />
+        </li>
+        <li>
+          <label for="nex">NEX:</label>
+          <input type="text" id="nex" name="nex" placeholder="X %" />
+        </li>
+        <li>
+          <label for="pemax">PE MAX:</label>
+          <input type="text" id="pemax" name="pemax" placeholder="XX" />
+        </li>
+        <li>
+          <label for="prestigio">PRESTIGIO:</label>
+          <input
+            type="text"
+            id="prestigio"
+            name="prestigio"
+            placeholder="XXX"
+          />
+        </li>
+      </ul>
+    </div>
+    <!-- atributos -->
+    <div>
+      <h3>Atributos</h3>
+      <ul class="lista">
+        <li>
+          <label for="agilidade">AGILIDADE:</label>
+          <input type="text" id="agilidade" name="agilidade" placeholder="XX" />
+        </li>
+        <li>
+          <label for="força">FORÇA:</label>
+          <input type="text" id="força" name="força" placeholder="XX" />
+        </li>
+        <li>
+          <label for="inteligencia">INTELIGÊNCIA:</label>
+          <input
+            type="text"
+            id="inteligencia"
+            name="inteligencia"
+            placeholder="XX"
+          />
+        </li>
+        <li>
+          <label for="presença">PRESENÇA:</label>
+          <input type="text" id="presença" name="presença" placeholder="XX" />
+        </li>
+        <li>
+          <label for="vigor">VIGOR:</label>
+          <input type="text" id="vigor" name="vigor" placeholder="XX" />
+        </li>
+      </ul>
+    </div>
+
+    <!-- saúde -->
+    <div>
+      <h3>Saúde</h3>
+
+      <table border="1">
+        <tr>
+          <td></td>
+          <th>ATUAL</th>
+          <th>MÁXIMO</th>
+        </tr>
+
+        <tr>
+          <td>PONTOS DE<br />VIDA</td>
+          <td contenteditable="true">XX</td>
+          <td contenteditable="true">XX</td>
+        </tr>
+
+        <tr>
+          <td>SANIDADE</td>
+          <td contenteditable="true">XX</td>
+          <td contenteditable="true">XX</td>
+        </tr>
+
+        <tr>
+          <td>PONTOS DE<br />ESFORÇO</td>
+          <td contenteditable="true">XX</td>
+          <td contenteditable="true">XX</td>
+        </tr>
+      </table>
+    </div>
+    <!-- defesas -->
+    <div>
+      <h3>Defesas</h3>
+      <ul>
+        <li>
+          <label for="defesa">DEFESA:</label>
+          <input type="text" id="defesa" name="defesa" placeholder="XX" />
+        </li>
+        <li>
+          <label for="esquiva">ESQUIVA:</label>
+          <input type="text" id="esquiva" name="esquiva" placeholder="XX" />
+        </li>
+        <li>
+          <label for="reduçao_de_bloqueio">REDUÇÃO DE BLOQUEIO:</label>
+          <input
+            type="text"
+            id="reduçao_de_bloqueio"
+            name="reduçao_de_bloqueio"
+            placeholder="XX"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Resistências a Dano</h3>
+      <ul class="lista">
+        <li>
+          <label for="fisica">FÍSICA:</label>
+          <input type="text" id="fisica" name="fisica" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="balistica">BALÍSTICA:</label>
+          <input type="text" id="balistica" name="balistica" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="mental">MENTAL:</label>
+          <input type="text" id="mental" name="mental" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="sangue">SANGUE:</label>
+          <input type="text" id="sangue" name="sangue" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="morte">MORTE:</label>
+          <input type="text" id="morte" name="morte" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="energia">ENERGIA:</label>
+          <input type="text" id="energia" name="energia" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="conhecimento">CONHECIMENTO:</label>
+          <input
+            type="text"
+            id="conhecimento"
+            name="conhecimento"
+            placeholder="XX"
+          />
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <div>
+          <li>
+            <label for="deslocamento"><h3>DESLOCAMENTO:</h3></label>
+            <input
+              type="text"
+              id="deslocamento"
+              name="deslocamento"
+              placeholder="XX"
+            />
+          </li>
+        </div>
+        <div>
+          <li>
+            <label for="dt_rituais"><h3>DT RITUAIS:</h3></label>
+            <input
+              type="text"
+              id="dt_rituais"
+              name="dt_rituais"
+              placeholder="XX"
+            />
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div>
+      <h3>Armas</h3>
+      <ul class="lista">
+        <li>
+          <label for="arma">ARMA:</label>
+          <input type="text" id="arma" name="arma" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="tipo">TIPO:</label>
+          <input type="text" id="tipo" name="tipo" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="ataque">ATAQUE:</label>
+          <input type="text" id="ataque" name="ataque" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="alcance">ALCANCE:</label>
+          <input type="text" id="alcance" name="alcance" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="dano">DANO:</label>
+          <input type="text" id="dano" name="dano" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="critico">CRÍTICO:</label>
+          <input type="text" id="critico" name="critico" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="recarga">RECARGA:</label>
+          <input type="text" id="recarga" name="recarga" placeholder="XX" />
+        </li>
+
+        <li>
+          <label for="especial">ESPECIAL:</label>
+          <input type="text" id="especial" name="especial" placeholder="XX" />
+        </li>
+      </ul>
+    </div>
+
+    <!-- pericias e treinamento -->
+
+    <div>
+      <h3>Perícias</h3>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Perícia</th>
+            <th>Atributo</th>
+            <th>Bônus</th>
+            <th>Treino</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Acrobacia</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Adestramento</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Artes</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Atletismo</td>
+            <td>FOR</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Atualidades</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Ciências</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Crime</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Diplomacia</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Enganação</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fortitude</td>
+            <td>VIG</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Furtividade</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Iniciativa</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Intimidação</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Intuição</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Investigação</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Luta</td>
+            <td>FOR</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Medicina</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Ocultismo</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Percepção</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Pilotagem</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Pontaria</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Profissão</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Reflexos</td>
+            <td>AGI</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Religião</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Sobrevivência</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tática</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tecnologia</td>
+            <td>INT</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Vontade</td>
+            <td>PRE</td>
+            <td><input type="text" placeholder="+0" /></td>
+            <td>
+              <select>
+                <option>--</option>
+                <option>Treinado</option>
+                <option>Veterano</option>
+                <option>Expert</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <button onclick="alert('Ficha finalizada!')">Finalizar Ficha</button>
+    </div>
+
+    <footer>
+      <p>IFRN - CAMPUS MACAU - Página feita por Débora</p>
+      <p>Ficha versão 1.0</p>
+    </footer>
+  </body>
+</html>

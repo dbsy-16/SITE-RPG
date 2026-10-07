@@ -1,0 +1,47 @@
+body {
+  background-color: #cac3c3d3;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #b22222;
+  margin: 50px;
+  text-align: center;
+  font-size: 60px;
+}
+
+button {
+  color: #ff0000;
+  padding: 12px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 20px;
+  padding: 12px 20px;
+  text-align: justify;
+  margin: 8px 0;
+}
+
+h2,
+h3 {
+  color: #b22222;
+  padding: 12px 20px;
+  font-size: 30px;
+}
+
+ul li {
+  font-size: 20px;
+  margin: 8px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+ol li {
+  font-size: 20px;
+  margin: 8px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+}

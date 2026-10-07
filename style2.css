@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Protest+Revolution&display=swap");
+
+:root {
+  --preto: #0b0b0b;
+  --preto-caixa: #181818;
+  --preto-input: #111111;
+
+  --branco: #ffffff;
+  --cinza: #444444;
+  --cinza-claro: #666666;
+
+  --roxo: #6d28d9;
+  --roxo-claro: #8b5cf6;
+  --roxo-escuro: #5b21b6;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
+}
+
+body {
+  background-color: #0b0b0b;
+  color: white;
+  font-family: "Comic Relief", sans-serif;
+  padding: 20px;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  font-family: "Protest Revolution", sans-serif;
+  color: #ffffff;
+  background-color: #5b21b6;
+  letter-spacing: 2px;
+
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid #6d28d9;
+  padding-bottom: 10px;
+}
+
+/* Caixas */
+body > div {
+  background-color: #181818;
+  border: 1px solid #444;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 1000px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.lista input {
+    width: 90%;
+}
+
+/* Textos */
+label {
+  font-weight: bold;
+}
+
+/* Campos */
+input,
+select {
+  background-color: #111;
+  color: white;
+  border: 1px solid #666;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+/* Quando clicar no campo */
+input:focus,
+select:focus {
+  border-color: purple;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #5b21b6;
+  padding: 10px;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Botões */
+button {
+  background-color: #6d28d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Comic Relief", sans-serif;
+}
+
+button:hover {
+  background-color: #8b5cf6;
+}
+
+/* Botão Início */
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
