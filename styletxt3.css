@@ -1,47 +1,71 @@
-body {
-  background-color: #cac3c3d3;
-  font-family: Arial, sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+
+:root {
+  --burgundy: #980D32;
+  --berry: #CE275F;
+  --peach: #EC6D50;
+  --cream: #FFEAD8;
 }
 
-h1 {
-  color: #7318b0;
-  margin: 50px;
-  text-align: center;
-  font-size: 60px;
+body { 
+  background-color: var(--cream);
+} 
+ 
+h1 { 
+  color: var(--burgundy); 
+  margin: 50px; 
+  text-align: center; 
+  font-size: 60px; 
+} 
+ 
+button { 
+  color: var(--berry); 
+  padding: 12px 20px; 
+  font-size: 20px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+} 
+ 
+p { 
+  font-size: 20px; 
+  padding: 12px 20px; 
+  text-align: justify; 
+  margin: 8px 0; 
+  color: var(--burgundy); 
+} 
+ 
+h2, 
+h3 { 
+  color: var(--berry); 
+  padding: 12px 20px; 
+  font-size: 30px; 
+} 
+ 
+ul li { 
+  font-size: 20px; 
+  margin: 8px 0; 
+  padding: 6px 10px; 
+  border-radius: 6px; 
+  color: var(--burgundy); 
+} 
+ 
+ol li { 
+  font-size: 20px; 
+  margin: 8px 0; 
+  padding: 6px 10px; 
+  border-radius: 6px; 
+  color: var(--burgundy); 
+} 
+ 
+* { 
+  font-family: "Sedgwick Ave", cursive; 
+  font-weight: 200; 
+  font-style: normal; 
 }
 
-button {
-  color: #9a26e7;
-  padding: 12px 20px;
-  font-size: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
-p {
-  font-size: 20px;
-  padding: 12px 20px;
-  text-align: justify;
-  margin: 8px 0;
-}
 
-h2,
-h3 {
-  color: #7318b0;
-  padding: 12px 20px;
-  font-size: 30px;
-}
 
-ul li {
-  font-size: 20px;
-  margin: 8px 0;
-  padding: 6px 10px;
-  border-radius: 6px;
-}
 
-ol li {
-  font-size: 20px;
-  margin: 8px 0;
-  padding: 6px 10px;
-  border-radius: 6px;
-}
+
