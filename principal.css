@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: #19191d;
+    padding: 2.5 1.5;
+    text-align: center;
+    border-bottom: 3px solid #BEDCFE;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5;
+    margin-bottom: 0.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    color: #a8a8b3;
+    font-size: 1.1rem;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    width: 100%;
+}
+
+.rpg-sistemas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card-rpg {
+    background-color: #19191d;
+    border: 1px solid #29292e;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease
+
+}
+
+
+.classeop, .classeles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.card-rpg h2 {
+    font-size: 1.4;
+    color: #ffffff;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #202024;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-rpg img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-top: 1px solid #29292e;
+    border-bottom: 1px solid #29292e;
+}
+
+
+.card-rpg div:has(button) {
+    padding: 1.2rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+.card-rpg button {
+    width: 250px;
+    height: 35px;
+    padding: 0.8 1;
+    background-color:#523249;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.card-rpg button:hover {
+    background-color: #9466ff;
+}
+
+.card-rpg button:active {
+    transform: scale(0.98);
+}
+
+
+footer {
+    background-color: #09090a;
+    border-top: 1px solid #29292e;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    margin-top: auto;
+    text-align: center;
+}
+
+
+
+
+.footer-conteudo {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;     
+}
+
+.creditos {
+    color: #7c7c8a;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: #29292e;
+    border-radius: 10px;   
+}
