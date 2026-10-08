@@ -1,73 +1,116 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
 
 :root {
-  --burgundy: #980D32;
-  --berry: #CE275F;
-  --peach: #EC6D50;
-  --cream: #FFEAD8;
+  --vinho: #980D32;
+  --rosa: #CE275F;
+  --pesego: #EC6D50;
+  --creme: #FFEAD8;
+
+  --preto: #0b0b0b;
+  --caixa: #181818;
+  --borda: #444444;
 }
 
-body { 
-  background-color: var(--cream);
-} 
- 
-h1 { 
-  color: var(--burgundy); 
-  margin: 50px; 
-  text-align: center; 
-  font-size: 60px; 
-} 
- 
-button { 
-  color: var(--berry); 
-  padding: 12px 20px; 
-  font-size: 20px; 
-  border-radius: 8px; 
-  cursor: pointer; 
-} 
- 
-p { 
-  font-size: 20px; 
-  padding: 12px 20px; 
-  text-align: justify; 
-  margin: 8px 0; 
-  color: var(--burgundy); 
-} 
- 
-h2, 
-h3 { 
-  color: var(--berry); 
-  padding: 12px 20px; 
-  font-size: 30px; 
-} 
- 
-ul li { 
-  font-size: 20px; 
-  margin: 8px 0; 
-  padding: 6px 10px; 
-  border-radius: 6px; 
-  color: var(--burgundy); 
-} 
- 
-ol li { 
-  font-size: 20px; 
-  margin: 8px 0; 
-  padding: 6px 10px; 
-  border-radius: 6px; 
-  color: var(--burgundy); 
-} 
- 
-* { 
-  font-family: "Sedgwick Ave", cursive; 
-  font-weight: 200; 
-  font-style: normal; 
+* {
+  font-family: "Sedgwick Ave", cursive;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: var(--preto);
+  color: var(--creme);
+  padding: 20px;
+  margin: 0;
+}
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+  color: var(--creme);
+  background-color: var(--vinho);
+  text-align: center;
+  font-size: 40px;
+  padding: 5px;
+  margin: 0 0 25px 0;
+  border-bottom: 2px solid var(--rosa);
+}
+
+/* TÍTULOS DAS CAIXAS */
+
+h2,
+h3 {
+  color: var(--creme);
+  background-color: var(--rosa);
+  font-size: 28px;
+  padding: 3px 8px;
+  margin: 10px 0 18px 0;
+  letter-spacing: 1px;
+}
+
+/* PARÁGRAFOS */
+
+p {
+  color: var(--creme);
+  font-size: 18px;
+  padding: 0;
+  margin: 8px 0;
+  text-align: justify;
+}
+
+/* CAIXAS PRINCIPAIS */
+
+body > div {
+  background-color: var(--caixa);
+  border: 1px solid var(--borda);
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 1030px;
+}
+
+/* LISTAS */
+
+ul li,
+ol li {
+  color: var(--creme);
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 3px;
+}
+
+/* IMAGENS */
 
 img {
-  width: 300px;
+  width: 80%;
+  max-width: 750px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+/* BOTÕES */
+
+button {
+  background-color: var(--pessego);
+  color: var(--creme);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--rosa);
+}
+
+/* LINKS */
+
+a {
+  color: var(--pessego);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--creme);
 }
 
 
