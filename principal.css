@@ -1,149 +1,123 @@
+:root {
+  --cor-rosa-claro: #e0b4b2;
+  --cor-laranja: #e99856;
+  --cor-vermelho-queimado: #a54055;
+  --cor-vinho: #622347;
+  --cor-roxo-escuro: #42164b;
+  --cor-azul-profundo: #1a1836;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #121214;
-    color: #e1e1e6;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-
+  background-color: var(--cor-azul-profundo);
+  color: white;
+  font-family: Georgia, serif;
 }
 
+/* CABEÇALHO */
+
 header {
-    background-color: #19191d;
-    padding: 2.5 1.5;
-    text-align: center;
-    border-bottom: 3px solid #BEDCFE;
+  height: 430px;
+  background-image:
+    linear-gradient(to bottom, transparent 45%, var(--cor-azul-profundo) 100%),
+    url("https://i.pinimg.com/1200x/dc/f0/ca/dcf0ca1c9d5adbb3818243e45b155fb4.jpg");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 header h1 {
-    color: #ffffff;
-    font-size: 2.5;
-    margin-bottom: 0.5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-family:'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 15px;
 }
 
 header p {
-    color: #a8a8b3;
-    font-size: 1.1rem;
+  font-size: 1rem;
+  color: white;
 }
 
+/* ÁREA DOS RPGS */
+
 main {
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-    width: 100%;
+  padding: 30px 50px 60px;
 }
 
 .rpg-sistemas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
+
+/* CARDS */
 
 .card-rpg {
-    background-color: #19191d;
-    border: 1px solid #29292e;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, border-color 0.3s ease
-
+  background-color: var(--cor-vinho);
+  border: 2px solid var(--cor-roxo-escuro);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0.3s;
 }
 
-
-.classeop, .classeles {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-}
-
-.card-rpg h2 {
-    font-size: 1.4;
-    color: #ffffff;
-    padding: 1.2rem;
-    text-align: center;
-    background-color: #202024;
-    font-family: 'Courier New', Courier, monospace;
+.card-rpg:hover {
+  transform: translateY(-8px);
+  border-color: var(--cor-laranja);
 }
 
 .card-rpg img {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-    border-top: 1px solid #29292e;
-    border-bottom: 1px solid #29292e;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-
-.card-rpg div:has(button) {
-    padding: 1.2rem;
-    margin-top: auto;
-    text-align: center;
+.card-rpg h2 {
+  color: var(--cor-rosa-claro);
+  font-size: 1.3rem;
+  margin: 20px 10px;
 }
 
-.card-rpg button {
-    width: 250px;
-    height: 35px;
-    padding: 0.8 1;
-    background-color:#523249;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.95;
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;
-    font-family:'Courier New', Courier, monospace;
+/* BOTÕES */
+
+.card-rpg a {
+  display: inline-block;
+  background-color: var(--cor-laranja);
+  color: var(--cor-azul-profundo);
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  transition: 0.3s;
 }
 
-.card-rpg button:hover {
-    background-color: #537D8D;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.card-rpg a:hover {
+  background-color: var(--cor-rosa-claro);
 }
 
-.card-rpg button:active {
-    transform: scale(0.98);
-}
-
+/* RODAPÉ */
 
 footer {
-    background-color: #09090a;
-    border-top: 1px solid #29292e;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    margin-top: auto;
-    text-align: center;
-}
-
-
-
-
-
-.footer-conteudo {
-    
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;     
+  background-color: var(--cor-roxo-escuro);
+  padding: 25px;
+  text-align: center;
 }
 
 .creditos {
-    color: #7c7c8a;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    background-color: #29292e;
-    border-radius: 10px;   
+  color: var(--cor-rosa-claro);
+  font-size: 0.85rem;
 }
-
