@@ -131,7 +131,7 @@ function obterIdentificador(campo, indice) {
 
         // Treinamento da perícia
         if (numeroColuna === 3) {
-            return pericia_${ nomePericia } _treino;
+            return pericia_${nomePericia}_treino;
         }
     }
 
