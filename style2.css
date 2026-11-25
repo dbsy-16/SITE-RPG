@@ -16,16 +16,16 @@
 }
 
 header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 header img {
-    width: 220px;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
+  width: 220px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
 }
 
 body {
@@ -35,7 +35,6 @@ body {
   padding: 20px;
 }
 
-
 h1,
 h2,
 h3 {
@@ -43,7 +42,6 @@ h3 {
   color: #ffffff;
   background-color: #5b21b6;
   letter-spacing: 2px;
-
 }
 
 h1 {
@@ -61,20 +59,18 @@ body > div {
 }
 
 .lista {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .lista input {
-    width: 90%;
+  width: 90%;
 }
-
 
 label {
   font-weight: bold;
 }
-
 
 input,
 select {
@@ -85,12 +81,10 @@ select {
   border-radius: 4px;
 }
 
-
 input:focus,
 select:focus {
   border-color: purple;
 }
-
 
 table {
   width: 100%;
@@ -109,7 +103,6 @@ td {
   padding: 8px;
   text-align: center;
 }
-
 
 button {
   background-color: #6d28d9;
@@ -133,3 +126,56 @@ footer {
   text-align: center;
 }
 
+#resultado,
+#resumo {
+  background-color: #181818;
+  border: 1px solid #6d28d9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+#resultado h1 {
+  font-size: 60px;
+  color: #a78bfa;
+}
+
+/* MENSAGENS MISTERIOSAS */
+
+.mensagem-misteriosa {
+  color: #a78bfa;
+  font-family: "Comic Relief", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+
+  margin-top: 20px;
+  padding: 12px;
+
+  border-top: 1px solid #5b21b6;
+
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.5);
+
+  animation: aparecerMensagem 1s ease;
+}
+
+.mensagem-especial {
+  color: #c4b5fd;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  text-shadow: 0 0 10px #6d28d9;
+}
+
+@keyframes aparecerMensagem {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
