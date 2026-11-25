@@ -7,6 +7,12 @@
      <link rel="stylesheet" href="style1.css">
   </head>
   <body>
+    
+    <div id=”carregamento”>
+	<div id=”emote”>🎲</div>
+	<p>Preparando a aventura…</p>
+</div>
+
     <header>
       <div>
         <img
@@ -29,7 +35,25 @@
             name="nome"
             placeholder="Digite seu nome aqui"
           />
+
       
+      <div>
+	      <h2>Rolador de Dados<h2>
+	      <button id=”rolar”>Rolar d20</button>
+	      <p id=”resultado”></p>
+
+
+      <div>
+	<label for=”tema”>Tema:</label>
+	<select id=”tema”>
+		<option value=”dia”>Dia</option>
+		<option value=”noite”>Noite</option>
+		<option value=”pergaminho”>Pergaminho</option>
+	</select>
+</div>
+
+      
+
       <label for="nomep">Nome do Personagem:</label>
           <input
             type="text"
