@@ -21,12 +21,33 @@ body {
 
 /* CABEÇALHO */
 
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.logo {
+  width: 200px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.logotipo {
+  width: 800px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
 header {
-  height: 430px;
+  height: 100vh;
   background-image:
     linear-gradient(to bottom, transparent 45%, var(--cor-azul-profundo) 100%),
     url("https://i.pinimg.com/1200x/dc/f0/ca/dcf0ca1c9d5adbb3818243e45b155fb4.jpg");
-
   background-size: cover;
   background-position: center;
   display: flex;
@@ -36,16 +57,10 @@ header {
   text-align: center;
 }
 
-header h1 {
-  font-size: 3.5rem;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  margin-bottom: 15px;
-}
-
 header p {
-  font-size: 1rem;
-  color: white;
+  font-size: 1.1rem;
+  color: var(--cor-rosa-claro);
+  margin-top: 30px;
 }
 
 /* ÁREA DOS RPGS */
@@ -107,6 +122,19 @@ main {
 
 .card-rpg a:hover {
   background-color: var(--cor-rosa-claro);
+}
+
+/* ANIMAÇÃO DE ROLAGEM */
+
+.escondido {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.aparecer {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* RODAPÉ */

@@ -9,18 +9,16 @@ botao.addEventListener("click", function () {
 const seletorTema = document.getElementById("tema");
 
 function aplicarTema(tema) {
-  document.body.classList.remove("noite", "pergaminho");
-
-  if (tema !== "dia") {
-    document.body.classList.add(tema);
+  document.body.classList.remove("noite");
+  if (tema === "noite") {
+    document.body.classList.add("noite");
   }
-
   seletorTema.value = tema;
   localStorage.setItem("tema", tema);
 }
 
 const temaSalvo = localStorage.getItem("tema");
-if (temaSalvo) {
+if (temaSalvo === "dia" || temaSalvo === "noite") {
   aplicarTema(temaSalvo);
 }
 
@@ -28,7 +26,7 @@ seletorTema.addEventListener("change", function () {
   aplicarTema(seletorTema.value);
 });
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const tela = document.getElementById("carregamento");
 
   setTimeout(function () {
