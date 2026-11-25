@@ -19,7 +19,6 @@ const mensagensMisteriosas = [
 ];
 
 function mensagemAleatoria() {
-
     const indice = Math.floor(
         Math.random() * mensagensMisteriosas.length
     );
@@ -31,31 +30,24 @@ function mensagemAleatoria() {
 // ROLAGEM DE DADOS - D20 //
 
 function rolarD20() {
-
     const resultado = Math.floor(Math.random() * 20) + 1;
-
     const campo = document.getElementById("resultado");
-
     const mensagem = mensagemAleatoria();
 
     let resultadoEspecial = "";
 
     if (resultado === 20) {
-
         resultadoEspecial = `
             <p class="mensagem-especial">
                 ✨ UAU! O Outro Lado favoreceu você... ✨ 
             </p>
         `;
-
     } else if (resultado === 1) {
-
         resultadoEspecial = `
             <p class="mensagem-especial">
                 👁️ FALHA CRÍTICA! Algo despertou... 👁️
             </p>
         `;
-
     }
 
     campo.innerHTML = `
@@ -64,12 +56,13 @@ function rolarD20() {
         <h1>${resultado}</h1>
 
         <p>
-            ${resultado === 20
-            ? "INCRÍVEL! A SORTE ESTÁ DO SEU LADO. ✨"
-            : resultado === 1
-                ? "Aparentemente você tem um dedo podre..."
-                : "Rolagem realizada!"
-        }
+            ${
+                resultado === 20
+                    ? "INCRÍVEL! A SORTE ESTÁ DO SEU LADO. ✨"
+                    : resultado === 1
+                    ? "Aparentemente você tem um dedo podre..."
+                    : "Rolagem realizada!"
+            }
         </p>
 
         ${resultadoEspecial}
@@ -84,7 +77,6 @@ function rolarD20() {
 // RESUMO DO PERSONAGEM //
 
 function mostrarResumo() {
-
     const nome = document.getElementById("nome").value;
     const idade = document.getElementById("idade").value;
     const classe = document.getElementById("classe").value;
@@ -112,38 +104,33 @@ function mostrarResumo() {
 // IDENTIFICAR CAMPOS DAS PERÍCIAS //
 
 function obterIdentificador(campo, indice) {
-
     const linha = campo.closest("tbody tr");
 
     // Se o campo estiver dentro da tabela de perícias
     if (linha) {
-
         const nomePericia = linha.cells[0].textContent.trim();
-
         const coluna = campo.closest("td");
-
         const numeroColuna = Array.from(linha.cells).indexOf(coluna);
 
         // Bônus da perícia
         if (numeroColuna === 2) {
-            return pericia_${ nomePericia } _bonus;
+            return `pericia_${nomePericia}_bonus`;
         }
 
         // Treinamento da perícia
         if (numeroColuna === 3) {
-            return pericia_${nomePericia}_treino;
+            return `pericia_${nomePericia}_treino`;
         }
     }
 
     // Identificação dos outros campos
-    return campo.id || campo_${ indice };
+    return campo.id || `campo_${indice}`;
 }
 
 
 // SALVAR FICHA //
 
 function salvarFicha() {
-
     const campos = document.querySelectorAll(
         "input, select, td[contenteditable='true']"
     );
@@ -151,13 +138,11 @@ function salvarFicha() {
     const dados = {};
 
     campos.forEach((campo, indice) => {
-
         const identificador = obterIdentificador(campo, indice);
 
         dados[identificador] = campo.value !== undefined
             ? campo.value
             : campo.innerText;
-
     });
 
     localStorage.setItem("fichaOrdem", JSON.stringify(dados));
@@ -169,7 +154,6 @@ function salvarFicha() {
 // CARREGAR FICHA SALVA //
 
 function carregarFicha() {
-
     const dadosSalvos = localStorage.getItem("fichaOrdem");
 
     if (!dadosSalvos) return;
@@ -181,18 +165,19 @@ function carregarFicha() {
     );
 
     campos.forEach((campo, indice) => {
-
         const identificador = obterIdentificador(campo, indice);
 
         if (dados[identificador] !== undefined) {
-
             if (campo.value !== undefined) {
                 campo.value = dados[identificador];
             } else {
                 campo.innerText = dados[identificador];
             }
-
         }
-
     });
 }
+
+
+// CARREGAR AUTOMATICAMENTE //
+
+window.addEventListener("DOMContentLoaded", carregarFicha);

@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dungeons and Dragons</title>
-     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
-    
-    <div id=”carregamento”>
-	<div id=”emote”>🎲</div>
-	<p>Preparando a aventura…</p>
-</div>
+    <!-- Tela de Carregamento -->
+    <div id="carregamento">
+      <div id="emote">🎲</div>
+      <p>Preparando a aventura…</p>
+    </div>
 
     <header>
       <div>
@@ -23,52 +23,43 @@
       </div>
     </header>
 
+    <!-- Mudança de Temas -->
+    <div class="caixa-tema">
+      <label for="tema">Tema:</label>
+      <select id="tema">
+        <option value="dia">Dia</option>
+        <option value="noite">Noite</option>
+        <option value="pergaminho">Pergaminho</option>
+      </select>
+    </div>
+
     <h2>Ficha</h2>
 
     <div>
       <h2>Informações do Jogador</h2>
 
       <label for="nome">Nome do Jogador:</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Digite seu nome aqui"
-          />
-
-      
-      <div>
-	      <h2>Rolador de Dados<h2>
-	      <button id=”rolar”>Rolar d20</button>
-	      <p id=”resultado”></p>
-
-
-      <div>
-	<label for=”tema”>Tema:</label>
-	<select id=”tema”>
-		<option value=”dia”>Dia</option>
-		<option value=”noite”>Noite</option>
-		<option value=”pergaminho”>Pergaminho</option>
-	</select>
-</div>
-
-      
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome aqui"
+      />
+      <br /><br />
 
       <label for="nomep">Nome do Personagem:</label>
-          <input
-            type="text"
-            id="nomep"
-            name="nomep"
-            placeholder="Digite o nome aqui"
-          />
+      <input
+        type="text"
+        id="nomep"
+        name="nomep"
+        placeholder="Digite o nome aqui"
+      />
     </div>
 
- 
     <div>
       <h2>Escolha seu personagem</h2>
 
       <label>Raça:</label>
-
       <select>
         <option>Humano</option>
         <option>Elfo</option>
@@ -82,7 +73,6 @@
 
     <div>
       <label>Classe:</label>
-
       <select>
         <option>Guerreiro</option>
         <option>Mago</option>
@@ -129,9 +119,7 @@
       <h2>Histórico do Personagem</h2>
 
       <label>Conte sobre seu personagem:</label>
-
       <br /><br />
-
       <textarea rows="5" cols="40"></textarea>
     </div>
 
@@ -142,17 +130,14 @@
 
       <input type="checkbox" />
       <label>Espada</label>
-
       <br />
 
       <input type="checkbox" />
       <label>Arco</label>
-
       <br />
 
       <input type="checkbox" />
       <label>Cajado</label>
-
       <br />
 
       <input type="checkbox" />
@@ -171,19 +156,30 @@
       <input type="number" />
     </div>
 
+  
+    <div>
+      <h2>Rolador de Dados</h2>
+      <button id="rolar">Rolar d20</button>
+      <p id="resultado"></p>
+    </div>
+
     <br /><br />
 
     <div>
       <button onclick="alert('Ficha finalizada!')">Começar Aventura</button>
     </div>
+
     <div>
       <a href="texto1.html">
-            <button>Acessar Informações sobre o RPG</button>
-                </a>
+        <button>Acessar Informações sobre o RPG</button>
+      </a>
     </div>
+
     <footer>
       <p>IFRN - CAMPUS MACAU - Página feita por Sammily</p>
       <p>Ficha Versão 1.0</p>
     </footer>
+
+    <script src="ficha1.js"></script>
   </body>
 </html>
