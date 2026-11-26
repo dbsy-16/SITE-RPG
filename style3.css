@@ -147,3 +147,20 @@ footer {
     cursor: pointer;
 }
 
+.coracao {
+    position: fixed;
+    top: -40px;
+    background: black;
+    padding: 5px;
+    font-size: 22px;
+    z-index: 999;
+    animation: cair 4s linear forwards;
+}
+
+@keyframes cair {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
